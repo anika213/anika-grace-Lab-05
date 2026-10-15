@@ -21,18 +21,27 @@ def get_files(dirname):
 class WikiArticles():
 
     def __init__(self, data_dir, max_articles=None):
+        '''initialize data drectory & max articles'''
         self.data_dir = data_dir
         self.max_articles = max_articles
         self.article_names = None
 
     def _read_wiki_file(self, fp):
+        
+        """
+        TODO
+        """
         for line in fp:
-            line_as_json = None # TODO replace me: use the json library to parse the current line as a JSON object
-            name = None         # TODO replace me: in the JSON object you got above, look up the value of the "name" attribute
-            abstract = None     # TODO replace me: in the JSON object you got above, look up the value of the "abstract" attribute
+            line_as_json = json.loads(line) # use the json library to parse the current line as a JSON object
+            name = line_as_json['name']         # in the JSON object you got above, look up the value of the "name" attribute
+            abstract = line_as_json['abstract']     # TODO replace me: in the JSON object you got above, look up the value of the "abstract" attribute
             yield name, abstract
 
     def get_abstracts(self):
+        
+        """
+        Loops through each file in the data directory and gets the abstracts of each article (also populates names into self.article_names). If max_articles is not None, only the first max_articles articles are returned.
+        """
         n_processed = 0
         for fname in get_files(self.data_dir):
             with open(fname) as fp:
@@ -49,6 +58,9 @@ class WikiArticles():
                     yield abstract
 
     def get_names(self):
+        """
+        Returns the article_names attribute of the Class which is populated when get_abstracts is called. If get_abstracts has not been called yet, raises a RuntimeError.
+        """
         if self.article_names is None:
             raise RuntimeError("get_names cannot be called until get_abstracts has been called!")
         return self.article_names
@@ -112,9 +124,7 @@ class WikiWordVectors(ABC):
         documents: an iterable over documents, where each document is represented as a string
 
         Returns:
-        A tuple containing:
-        - A vocabulary learned from the input documents
-        - A matrix where the ith row is the vector representation of the ith vocab word
+        A matrix where the ith row is the vector representation of the ith vocab word
         """
         raise NotImplementedError()
 
