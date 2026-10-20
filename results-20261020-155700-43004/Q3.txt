@@ -1,0 +1,57 @@
+c
+[Q3] liberal arts college in southern california
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query liberal arts college in southern california:
+dimension of transformed_doc (1, 10000)
+dimension of self.vt (10000, 100)
+dimension of wiki_corpus_vectors matrix (121569, 100)
+1. Northern California Junior College Conference (similarity=0.7297431153868261)
+2. Silicon Beach (similarity=0.7177677966285692)
+3. University of California (similarity=0.7127476312319883)
+4. Teddy Cruz (similarity=0.6825234863531873)
+5. John Nobili (similarity=0.6742575693192521)
+6. California State University (similarity=0.6614772011367711)
+7. Luis Alberto Urrea (similarity=0.660402880327708)
+8. Culture of California (similarity=0.651394386814208)
+9. CSUSB Jack H. Brown College of Business and Public Administration (similarity=0.6456794897636087)
+10. Oscar V. Lange (similarity=0.644163417581778)
+
+[Q3] first manned mission to the moon
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query first manned mission to the moon:
+dimension of transformed_doc (1, 10000)
+dimension of self.vt (10000, 100)
+dimension of wiki_corpus_vectors matrix (121569, 100)
+1. Apollo 8 (similarity=0.8345554895802321)
+2. Apollo program (similarity=0.8187550635016873)
+3. STS-95 (similarity=0.8155240490061776)
+4. Apollo 12 (similarity=0.8044788121972897)
+5. Apollo Lunar Module (similarity=0.7971739165397105)
+6. Apollo 15 (similarity=0.7962972970408068)
+7. Artemis I (similarity=0.7932850734824297)
+8. Artemis 1 (similarity=0.7932850734824297)
+9. Space Shuttle Challenger (similarity=0.7807452498993024)
+10. 2022 in spaceflight (similarity=0.7780195810316766)
+
+[Q3] marvel movie about an insect themed superhero
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query marvel movie about an insect themed superhero:
+dimension of transformed_doc (1, 10000)
+dimension of self.vt (10000, 100)
+dimension of wiki_corpus_vectors matrix (121569, 100)
+1. Prowler (Marvel Comics) (similarity=0.7965718132292123)
+2. Sony's Spider-Man Universe (similarity=0.7947791872310703)
+3. Joss Whedon (similarity=0.7857842107433204)
+4. Miles Morales (similarity=0.7775512743337312)
+5. Spider-Verse (similarity=0.7761980573190048)
+6. Planet of the Apes (similarity=0.767356683842326)
+7. Batman Returns (similarity=0.7623100981629156)
+8. Eddie Brock (similarity=0.7565973865282806)
+9. The SpongeBob SquarePants Movie (similarity=0.7554641270726974)
+10. J. Jonah Jameson (film character) (similarity=0.7537008224376004)

@@ -3,62 +3,147 @@ import argparse
 from sklearn.preprocessing import normalize
 from scipy.sparse.linalg import svds
 from WikiDataReader import *
+from sklearn.feature_extraction.text import TfidfVectorizer
+from gensim.models import Word2Vec
+from gensim.utils import simple_preprocess
 
 #####################################################################
 # Part 3:
 # Define your new subclasses below!
 #####################################################################
 
-class SVDDocumentVectors(WikiDocumentVectors):
+
+class Word2Vectors(WikiWordVectors):
 
     def __init__(self):
+        """
+        Initializing a Word2Vec model that we will train later.
+        """
+        self.model = None
+
         
+    def train(self, documents):
+        """
+        Trains a vector semantics model on the input documents,
+        using Word2Vec, with dimensiality 100 (so we have 100 concepts),
+        window=5 so we expect the context to be within 5 words of our target,
+        min_count=1 so we look at every word that appears at least once,
+        and returns a matrix containing the resulting vector representations of 
+        each word in the vocabulary (i.e., the ith row of the matrix should be 
+        the vector representation of the ith vocabulary word)
+
+        Parameters:
+        documents: an iterable over documents, where each document is represented as a string
+
+        Returns:
+        A matrix where the ith row is the vector representation of the ith vocab word
+        """
+        sentences = [simple_preprocess(doc) for doc in documents]
+        self.model = Word2Vec(sentences=sentences, vector_size=100, window=5, min_count=1, workers=4, sg=0)
+        return self.model.wv.vectors
+
+
+    def get_word_index(self, word):
+        """
+        Returns the index of the word in the vocabulary that was learned during train, or -1 if the word isn't in the vocab
+
+        Uses the word vectors' key to index, and returns -1 if no index found.
+        """
+        return self.model.wv.key_to_index.get(word, -1)
+
+    def get_vocabulary(self):
+        """
+        Returns:
+        The vocabulary that was learned during train, as a list of words
+        """
+        vocabulary = list(self.model.wv.key_to_index.keys())
+        return vocabulary
+    
+    def get_word_vector(self, word):
+        """
+        Given a word that is in the vocabulary learned during train,
+        looks up and returns the vector for that word. This
+        method can only be called after train has been called.
+
+        If a word is not in the vocab, we return None. 
+        """
+        if word not in self.model.wv.key_to_index:
+            return None
+        return self.model.wv[word]
+
+class SVDWordVectors(WikiWordVectors):
+    
+    def __init__(self):
         """
         Initializing a Tfid insteance of TfidfVectorizer with max_vocab=10000 and max_df=0.7.
         Set up a place to store our V that gets output from svd
         """
         self.vectorizer = TfidfVectorizer(max_features=10000, max_df=0.7)
         # apply svd to the term-document matrix to reduce its dimensionality to 100
-        self.Vt = None
+        self.words_compressed = None
+        self.vocabulary = None
 
     def train(self, documents):
         """
-        Trains a vector semantics model on the input documents,
-        and returns a matrix containing the resulting vector
-        representations of each document represneting the outpiut of SVD 
-        on the term-document matrix. The matrix is
-        indexed the same as the input documents (i.e., the ith row
-        is the vector representation of the ith document). We know 
-        SVD decomposes into U @ s @ Vh, so we save Vh as self.Vh
+        Trains a SVD vector semantics model on the input documents,
+        and returns a tuple containing (1) a vocabulary learned
+        from the input documents, and (2) a matrix containing the
+        resulting vector representations of each word in the vocabulary
+        (i.e., the ith row of the matrix should be the vector representation
+        of the ith vocabulary word)
 
         Parameters:
         documents: an iterable over documents, where each document is represented as a string
 
         Returns:
-        A matrix containing the vector representations of each document, such that the ith row is the vector for the ith document
+        A matrix where the ith row is the vector representation of the ith vocab word
         """
         term_doc_matrix = self.vectorizer.fit_transform(documents)
-        u, s, vh = svds(term_doc_matrix, k=100)
-        self.Vt = vh
+        docs_compressed, s, words_compressed = svds(term_doc_matrix, k=100)
+        words_compressed = words_compressed.transpose()
+        self.words_compressed = words_compressed
+        self.vocabulary = self.vectorizer.vocabulary_
+        return words_compressed
 
-    def get_document_vector(self, new_doc):
+    def get_word_index(self, word):
         """
-        Using the trained vector semantics model, computes and returns
-        the vector representation of a new input document (i.e., a
-        document that was not previously seen during training). This
+        Returns:
+        The index of the word in the vocabulary that was learned during train, or -1 if the word isn't in the vocab
+
+        Must be called after model has been trained
+        """
+        if word not in self.vocabulary:
+            return -1
+        
+        index = self.vocabulary[word]
+        return index
+
+    def get_vocabulary(self):
+        """
+        Returns:
+        The vocabulary that was learned during train, as a list of words
+        """
+        # get keys from the vocabulary dictionary and convert to list
+        return list(self.vectorizer.get_feature_names_out())
+        
+    
+    def get_word_vector(self, word):
+        """
+        Given a word that is in the vocabulary learned during train,
+        looks up and returns the vector for that word. This
         method can only be called after train has been called.
 
         Parameters:
-        new_doc: a string representing the new document to process
+        word: a string representing the word that we want the vector for
 
         Returns:
-        The vector representation of new_doc, as computed by the vector semantics model
+        The vector representation of word, or None if word is not in the vocab.
         """
-        transformed_doc = self.vectorizer.transform([new_doc])
-        ## TODO: NOT DONE!!!! have to implement svd
-        print("dimension of transformed_doc", transformed_doc.shape)
-
-
+        index = self.get_word_index(word)
+        if index == -1:
+            return None
+        else:
+            return self.words_compressed[index]
 
 
 #####################################################################
@@ -77,7 +162,7 @@ class WikiWordLookup():
 
     def train_vector_model(self):
         '''
-        Gets and wiki word vectors using the WikiWordVector class's train function (which returns a matrix where the ith row is the vector representation of the ith vocab word), then normalizes that matrix. 
+        Gets a wiki word vectors using the WikiWordVector class's train function (which returns a matrix where the ith row is the vector representation of the ith vocab word), then normalizes that matrix. 
         '''
         print("Training vector model. Please wait, this may take a while...")
         self.wiki_word_vectors = self.word_vector_model.train(self.articles.get_abstracts())
@@ -86,25 +171,26 @@ class WikiWordLookup():
 
     def compute_rankings(self, input_word):
         """
-        
         This function first checks if the train_vector_model function is enabled. If  yes, it then normalizes the word vector itself
-        TODO
         """
+        
         if self.wiki_word_vectors is None:
             raise RuntimeError("Please run train_vector_model first!")
 
-        word_vector = normalize(self.word_vector_model.get_word_vector(input_word))
+        word_vector = self.word_vector_model.get_word_vector(input_word)
         if word_vector is None:
             return None, None
+        else:
+            word_vector = normalize(word_vector.reshape(1,-1))
 
-        # TODO: REPLACE the following line with code that computes the
-        # cosine similarity between the vector for input_word and all
-        # other word vectors in the self.wiki_word_vectors matrix, and
-        # saves the similarity scores to a list or numpy array called 
-        # sims, indexed in the same order as self.wiki_word_vectors.
-        sims = []
+        query_vector = word_vector.T
+        sims = self.wiki_word_vectors @ query_vector
+        if hasattr(sims, 'toarray'):
+            sims = sims.toarray()
+        sims = sims.flatten()
 
-        return sims, np.argsort(sims)[::-1][1:]
+        return sims, np.argsort(sims)[::-1]
+
 
     def run_search(self, input_word, n_results=10):
         """
@@ -131,12 +217,18 @@ def main():
                         help="The word to look up")
     parser.add_argument("-n", "--num_articles", type=int, metavar="N", default=None,
                         help="Only keep the first N articles parsed from the corpus files")
+    parser.add_argument("-v", "--wordvec", action="store_true",
+                        help="Use word2vec word vectors instead of SVD")
+    
     
     args = parser.parse_args()
 
     articles = WikiArticles(args.data_dir, args.num_articles)
-    # TODO replace the following line with an initialization of the appropriate WikiWordVectors subclass
-    word_vector_model = None
+    
+    if args.wordvec:
+        word_vector_model = Word2Vectors()
+    else:
+        word_vector_model = SVDWordVectors()
 
     word_lookup = WikiWordLookup(articles, word_vector_model)
     word_lookup.train_vector_model()

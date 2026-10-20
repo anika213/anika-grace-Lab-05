@@ -1,0 +1,68 @@
+
+[Q2] Nikola Tesla birthday
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query Nikola Tesla birthday:
+dimension of wiki_corpus_vectors matrix (121569, 10000)
+1. Birthday People (similarity=0.38836827218532405)
+2. Wolfgang Mieder (similarity=0.38047700402115936)
+3. Dutch festivities (similarity=0.27884679155768066)
+4. The 3rd Birthday (similarity=0.22916680937429942)
+5. Cardiology (album) (similarity=0.22362057276140546)
+6. The Birthday Party discography (similarity=0.22329107287671768)
+7. The Birthday Party (song) (similarity=0.19333206093524022)
+8. Edward Wallington (courtier) (similarity=0.17048752162472167)
+9. Music of the Parasite Eve series (similarity=0.1688865528506256)
+10. David Parkins (similarity=0.1634252727233335)
+
+[Q2] Ingredients in Fig Newtons
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query Ingredients in Fig Newtons:
+dimension of wiki_corpus_vectors matrix (121569, 10000)
+1. Christian Bale filmography (similarity=0.0)
+2. The Fiery Cross (Bruch) (similarity=0.0)
+3. Catholic Church by country (similarity=0.0)
+4. Beaubrun Ardouin (similarity=0.0)
+5. Hispanics in the United States Coast Guard (similarity=0.0)
+6. New National Party (Grenada) (similarity=0.0)
+7. 2016 United States Senate elections (similarity=0.0)
+8. Electoral history of Nigel Farage (similarity=0.0)
+9. Indian Peace Commission (similarity=0.0)
+10. Khans of Bollywood (similarity=0.0)
+
+[Q2] Forms of communication during World War 2
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query Forms of communication during World War 2:
+dimension of wiki_corpus_vectors matrix (121569, 10000)
+1. Communication (similarity=0.5596846039490804)
+2. Interpersonal communication (similarity=0.5309648332335668)
+3. Communication studies (similarity=0.5084737738788797)
+4. Communication for Development (similarity=0.5065663229200221)
+5. Two-way communication (similarity=0.4887826118823926)
+6. Augmentative and alternative communication (similarity=0.46652568453950743)
+7. Workplace communication (similarity=0.4578285049007157)
+8. Schramm's model of communication (similarity=0.44970421550092465)
+9. Intrapersonal communication (similarity=0.43688550828875505)
+10. Mark L. Knapp (similarity=0.4312293290940876)
+
+[Q2] The nature of God
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query The nature of God:
+dimension of wiki_corpus_vectors matrix (121569, 10000)
+1. Fitra (similarity=0.612210779826131)
+2. God in Christianity (similarity=0.5752523497005715)
+3. Nature connectedness (similarity=0.5665723123357167)
+4. Religious views of José Rizal (similarity=0.5465948147418606)
+5. Attributes of God in Islam (similarity=0.5297654902964946)
+6. Tawakkul (similarity=0.5209042787535126)
+7. God in Judaism (similarity=0.5136055238516548)
+8. Oluwa (similarity=0.5127770799689976)
+9. God in Islam (similarity=0.5005772941812054)
+10. Names of God (similarity=0.49868594306526637)
