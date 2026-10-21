@@ -1,0 +1,60 @@
+
+[Q7A] liberal arts college in southern california
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6505.18it/s]
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query liberal arts college in southern california:
+new_doc liberal arts college in southern california
+dimension of wiki_corpus_vectors matrix (121569, 768)
+1. UCLA College of Letters and Science (similarity=0.5976297855377197)
+2. CSULB College of Engineering (similarity=0.557942807674408)
+3. University of California (similarity=0.5554012060165405)
+4. University of California, Riverside academics (similarity=0.5515080690383911)
+5. UCLA School of Education and Information Studies (similarity=0.5407391786575317)
+6. South Coast League (California) (similarity=0.5349674224853516)
+7. California State University (similarity=0.5141497254371643)
+8. St. Vincent's Place (similarity=0.49918586015701294)
+9. Sea View League (similarity=0.4911385476589203)
+10. Los Angeles High School (similarity=0.490324467420578)
+
+[Q7A] first manned mission to the moon
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4974.83it/s]
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query first manned mission to the moon:
+new_doc first manned mission to the moon
+dimension of wiki_corpus_vectors matrix (121569, 768)
+1. Apollo program (similarity=0.7118903398513794)
+2. Apollo 8 (similarity=0.6878717541694641)
+3. Apollo 16 (similarity=0.6506093740463257)
+4. Apollo 11 (similarity=0.6475393772125244)
+5. Apollo 12 (similarity=0.6419335603713989)
+6. Apollo 15 (similarity=0.6337734460830688)
+7. Neil Armstrong (similarity=0.6214828491210938)
+8. Apollo 17 (similarity=0.6162746548652649)
+9. Frank Borman (similarity=0.6094927787780762)
+10. Apollo 14 (similarity=0.6034747362136841)
+
+[Q7A] marvel movie about an insect themed superhero
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4741.45it/s]
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query marvel movie about an insect themed superhero:
+new_doc marvel movie about an insect themed superhero
+dimension of wiki_corpus_vectors matrix (121569, 768)
+1. Ant-Man (film) (similarity=0.5328480005264282)
+2. Arthropods in film (similarity=0.4990845024585724)
+3. The Amazing Spider-Man (film) (similarity=0.45769330859184265)
+4. Spider-Man 3 (similarity=0.4490901827812195)
+5. Sony's Spider-Man Universe (similarity=0.4436800181865692)
+6. Venom (2018 film) (similarity=0.4436666667461395)
+7. Antz (similarity=0.4337480962276459)
+8. Spider-Man (2002 film) (similarity=0.43342217803001404)
+9. The Amazing Spider-Man 2 (similarity=0.42381682991981506)
+10. Spider-Man: Into the Spider-Verse (similarity=0.4131518304347992)

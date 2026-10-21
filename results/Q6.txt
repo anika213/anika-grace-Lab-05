@@ -1,0 +1,96 @@
+
+[Q6] male
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 most similar words to male:
+1. male (similarity=1.0)
+2. female (similarity=0.8407816405724765)
+3. belonging (similarity=0.8188298763185865)
+4. classified (similarity=0.7995208212736407)
+5. staple (similarity=0.7908173125950221)
+6. households (similarity=0.7894604702500426)
+7. rae (similarity=0.7861528178622862)
+8. comprising (similarity=0.7850039810495233)
+9. hamlets (similarity=0.77969581653966)
+10. breakdown (similarity=0.7782456184559956)
+
+[Q6] female
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 most similar words to female:
+1. female (similarity=1.0000000000000004)
+2. male (similarity=0.8407816405724768)
+3. woman (similarity=0.6974438628908292)
+4. women (similarity=0.6682935978584809)
+5. feminism (similarity=0.6418635336051901)
+6. feminist (similarity=0.634837196579973)
+7. suffrage (similarity=0.6115354219202619)
+8. gender (similarity=0.6096514694828512)
+9. belonging (similarity=0.568621119938446)
+10. sexually (similarity=0.5598484695627279)
+
+[Q6] black
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 most similar words to black:
+1. black (similarity=1.0000000000000002)
+2. white (similarity=0.9167483652117642)
+3. racial (similarity=0.7945329485263333)
+4. segregation (similarity=0.7917494092148363)
+5. crow (similarity=0.7869066985922977)
+6. whites (similarity=0.7801039530929786)
+7. african (similarity=0.7736858143886671)
+8. colored (similarity=0.7645071835307081)
+9. blacks (similarity=0.7543245076786)
+10. africans (similarity=0.704840675600734)
+
+[Q6] white
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 most similar words to white:
+1. white (similarity=0.9999999999999999)
+2. black (similarity=0.9167483652117666)
+3. whites (similarity=0.7679774603415278)
+4. colored (similarity=0.7266342525123066)
+5. crow (similarity=0.7242480619143752)
+6. racial (similarity=0.7124166787872243)
+7. segregation (similarity=0.6982687937239825)
+8. negro (similarity=0.6898316117464321)
+9. blacks (similarity=0.6848045818675458)
+10. brown (similarity=0.6636435480983879)
+
+[Q6] africa
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 most similar words to africa:
+1. africa (similarity=0.9999999999999999)
+2. apartheid (similarity=0.91060994746446)
+3. african (similarity=0.9054764286716739)
+4. tanzania (similarity=0.8827878150512097)
+5. africans (similarity=0.874888792386191)
+6. zimbabwe (similarity=0.8558756917492164)
+7. ghana (similarity=0.8544516869481429)
+8. south (similarity=0.8473430507638764)
+9. mozambique (similarity=0.8382883660339628)
+10. rhodesia (similarity=0.787180622242817)
+
+[Q6] europe
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 most similar words to europe:
+1. europe (similarity=1.0)
+2. european (similarity=0.7475431500574684)
+3. switzerland (similarity=0.6102210024032946)
+4. countries (similarity=0.5950898270728255)
+5. eu (similarity=0.5473262486971452)
+6. ages (similarity=0.5397885397796433)
+7. middle (similarity=0.5388008451831537)
+8. slovakia (similarity=0.5356332923277938)
+9. continent (similarity=0.5273238244433737)
+10. continents (similarity=0.5190294124368758)

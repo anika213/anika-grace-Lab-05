@@ -1,0 +1,76 @@
+
+[Q4] Nikola Tesla birthday
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query Nikola Tesla birthday:
+dimension of transformed_doc (1, 10000)
+dimension of self.vt (10000, 100)
+dimension of wiki_corpus_vectors matrix (121569, 100)
+1. David Temple (similarity=0.605889605682161)
+2. Philip Newman (similarity=0.6039906811181299)
+3. The Really Big Chorus (similarity=0.59122758204235)
+4. John Gough (composer) (similarity=0.5614681882045032)
+5. Christopher Wood (composer) (similarity=0.5500938525945276)
+6. Joo Yeon Sir (similarity=0.5302051395901887)
+7. Jack Fallon (similarity=0.526269241702739)
+8. Henry Lazarus (similarity=0.5257206799389532)
+9. Sable Chief (similarity=0.5252815679466989)
+10. Hertfordshire Chorus (similarity=0.5152058481984514)
+
+[Q4] Ingredients in Fig Newtons
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query Ingredients in Fig Newtons:
+dimension of transformed_doc (1, 10000)
+dimension of self.vt (10000, 100)
+dimension of wiki_corpus_vectors matrix (121569, 100)
+1. Christian Bale filmography (similarity=0.0)
+2. The Fiery Cross (Bruch) (similarity=0.0)
+3. Catholic Church by country (similarity=0.0)
+4. Beaubrun Ardouin (similarity=0.0)
+5. Hispanics in the United States Coast Guard (similarity=0.0)
+6. New National Party (Grenada) (similarity=0.0)
+7. 2016 United States Senate elections (similarity=0.0)
+8. Electoral history of Nigel Farage (similarity=0.0)
+9. Indian Peace Commission (similarity=0.0)
+10. Khans of Bollywood (similarity=0.0)
+
+[Q4] Forms of communication during World War 2
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query Forms of communication during World War 2:
+dimension of transformed_doc (1, 10000)
+dimension of self.vt (10000, 100)
+dimension of wiki_corpus_vectors matrix (121569, 100)
+1. Historiography of World War II (similarity=0.8645656010007545)
+2. Jay Winter (similarity=0.864375556378004)
+3. War economy (similarity=0.8631161346749924)
+4. World War I memorials (similarity=0.8395027209720877)
+5. War guilt question (similarity=0.8150992285439609)
+6. Technology during World War II (similarity=0.8134666104450861)
+7. Absolute war (similarity=0.8063732134172041)
+8. Just war theory (similarity=0.8009783275544855)
+9. 37 mm caliber (similarity=0.7894603153938955)
+10. Oskar Dirlewanger (similarity=0.7880322000244967)
+
+[Q4] The nature of God
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query The nature of God:
+dimension of transformed_doc (1, 10000)
+dimension of self.vt (10000, 100)
+dimension of wiki_corpus_vectors matrix (121569, 100)
+1. God in Christianity (similarity=0.9122267059007114)
+2. Religious perspectives on Jesus (similarity=0.8777757457298199)
+3. Grace in Christianity (similarity=0.8722307862579758)
+4. Deistic evolution (similarity=0.8715124852055034)
+5. Phoenix Affirmations (similarity=0.8703528812098347)
+6. Attributes of God in Islam (similarity=0.8692248288887824)
+7. God in Abrahamic religions (similarity=0.8687629651912627)
+8. Theocentrism (similarity=0.8629056268165314)
+9. Stewardship (theology) (similarity=0.8523251898466326)
+10. Ground of the Soul (similarity=0.8498408780265877)

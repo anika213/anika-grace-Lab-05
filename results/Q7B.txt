@@ -1,0 +1,32 @@
+
+[Q7B] college
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 most similar words to college:
+1. college (similarity=0.9999998807907104)
+2. school (similarity=0.7585721015930176)
+3. university (similarity=0.7573218941688538)
+4. seminary (similarity=0.6756242513656616)
+5. academy (similarity=0.6704579591751099)
+6. dartmouth (similarity=0.6650111675262451)
+7. colleges (similarity=0.6571524143218994)
+8. faculty (similarity=0.6520405411720276)
+9. byu (similarity=0.6347312927246094)
+10. graduate (similarity=0.630469024181366)
+
+[Q7B] science
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 most similar words to science:
+1. science (similarity=0.9999998807907104)
+2. sciences (similarity=0.7461021542549133)
+3. humanities (similarity=0.7208871841430664)
+4. sociology (similarity=0.6977206468582153)
+5. psychology (similarity=0.6962026357650757)
+6. anthropology (similarity=0.6942013502120972)
+7. informatics (similarity=0.6869334578514099)
+8. physics (similarity=0.6744104623794556)
+9. astronomy (similarity=0.6704402565956116)
+10. philosophy (similarity=0.668498694896698)

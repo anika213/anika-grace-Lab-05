@@ -1,0 +1,88 @@
+
+[Q8A] Nikola Tesla birthday
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4602.14it/s]
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query Nikola Tesla birthday:
+new_doc Nikola Tesla birthday
+dimension of wiki_corpus_vectors matrix (121569, 768)
+1. Nikola Tesla (similarity=0.5713604688644409)
+2. IEEE Marie Sklodowska-Curie Award (similarity=0.4347931742668152)
+3. Tesla Model S (similarity=0.40703052282333374)
+4. Eckart Marsch (similarity=0.3885461390018463)
+5. Robert Andrews Millikan (similarity=0.38835620880126953)
+6. 19th century in science (similarity=0.38698774576187134)
+7. Ernest Orlando Lawrence Award (similarity=0.3763110935688019)
+8. James Clerk Maxwell (similarity=0.3730189800262451)
+9. Arthur Scott King (similarity=0.36975809931755066)
+10. Nathaniel S. Keith (similarity=0.36283761262893677)
+
+[Q8A] Ingredients in Fig Newtons
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 6057.66it/s]
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query Ingredients in Fig Newtons:
+new_doc Ingredients in Fig Newtons
+dimension of wiki_corpus_vectors matrix (121569, 768)
+1. Ficus burtt-davyi (similarity=0.46391761302948)
+2. C21H20O10 (similarity=0.41157907247543335)
+3. C23H24O12 (similarity=0.3495355248451233)
+4. Newton's Apple (similarity=0.3228914737701416)
+5. Resinous glaze (similarity=0.3177851140499115)
+6. Pentadin (similarity=0.3078463077545166)
+7. Libellus de arte coquinaria (similarity=0.2938176989555359)
+8. Walnut (similarity=0.2932341396808624)
+9. Fokienia (similarity=0.2906566858291626)
+10. Macadamia tetraphylla (similarity=0.2896071970462799)
+
+[Q8A] Forms of communication during World War 2
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 4401.69it/s]
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query Forms of communication during World War 2:
+new_doc Forms of communication during World War 2
+dimension of wiki_corpus_vectors matrix (121569, 768)
+1. Microwave transmission (similarity=0.5806484222412109)
+2. Cryptanalysis of the Lorenz cipher (similarity=0.5734636783599854)
+3. Code talker (similarity=0.5673108100891113)
+4. Field telephone (similarity=0.5662606954574585)
+5. Far Eastern Liaison Office (similarity=0.5634018182754517)
+6. Allied military phonetic spelling alphabets (similarity=0.5539602041244507)
+7. Technology during World War II (similarity=0.5352476835250854)
+8. Office of the Coordinator of Information (similarity=0.5266461372375488)
+9. Alaska Communications System (similarity=0.5251483917236328)
+10. Telegraphy (similarity=0.5184623599052429)
+
+[Q8A] The nature of God
+
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Loading weights:   0%|          | 0/199 [00:00<?, ?it/s]
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 5302.50it/s]
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 search results for query The nature of God:
+new_doc The nature of God
+dimension of wiki_corpus_vectors matrix (121569, 768)
+1. Irenaean theodicy (similarity=0.5147237181663513)
+2. Intrinsic finality (similarity=0.5141106843948364)
+3. Attributes of God in Islam (similarity=0.49382609128952026)
+4. Human nature (similarity=0.4881778955459595)
+5. Problem of religious language (similarity=0.4807802438735962)
+6. Deity (similarity=0.46268004179000854)
+7. Inscape and instress (similarity=0.46241167187690735)
+8. Naturalism (philosophy) (similarity=0.46183186769485474)
+9. Religious views of José Rizal (similarity=0.45826950669288635)
+10. Nature (similarity=0.4581311047077179)

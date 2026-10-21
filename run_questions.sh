@@ -59,34 +59,34 @@ run() {
     fi
 }
 
-# Q2: CountDocumentVectors (implemented using TF-IDF).
-for query in \
-    'Nikola Tesla birthday' \
-    'Ingredients in Fig Newtons' \
-    'Forms of communication during World War 2' \
-    'The nature of God'
-do
-    run Q2 "$query" "$script_dir/wiki_search.py" "$data_dir" -m tfidf -q "$query" "$@"
-done
+# # Q2: CountDocumentVectors (implemented using TF-IDF).
+# for query in \
+#     'Nikola Tesla birthday' \
+#     'Ingredients in Fig Newtons' \
+#     'Forms of communication during World War 2' \
+#     'The nature of God'
+# do
+#     run Q2 "$query" "$script_dir/wiki_search.py" "$data_dir" -m tfidf -q "$query" "$@"
+# done
 
-# Q3: SVDDocumentVectors.
-for query in \
-    'liberal arts college in southern california' \
-    'first manned mission to the moon' \
-    'marvel movie about an insect themed superhero'
-do
-    run Q3 "$query" "$script_dir/wiki_search.py" "$data_dir" -m svd -q "$query" "$@"
-done
+# # Q3: SVDDocumentVectors.
+# for query in \
+#     'liberal arts college in southern california' \
+#     'first manned mission to the moon' \
+#     'marvel movie about an insect themed superhero'
+# do
+#     run Q3 "$query" "$script_dir/wiki_search.py" "$data_dir" -m svd -q "$query" "$@"
+# done
 
-# Q4: SVDDocumentVectors.
-for query in \
-    'Nikola Tesla birthday' \
-    'Ingredients in Fig Newtons' \
-    'Forms of communication during World War 2' \
-    'The nature of God'
-do
-    run Q4 "$query" "$script_dir/wiki_search.py" "$data_dir" -m svd -q "$query" "$@"
-done
+# # Q4: SVDDocumentVectors.
+# for query in \
+#     'Nikola Tesla birthday' \
+#     'Ingredients in Fig Newtons' \
+#     'Forms of communication during World War 2' \
+#     'The nature of God'
+# do
+#     run Q4 "$query" "$script_dir/wiki_search.py" "$data_dir" -m svd -q "$query" "$@"
+# done
 
 # Q6: SVDWordVectors (the default); each comparison pair is adjacent.
 for word in male female black white africa europe
@@ -94,24 +94,24 @@ do
     run Q6 "$word" "$script_dir/wiki_word_lookup.py" "$data_dir" -w "$word" "$@"
 done
 
-# Q7A: SentenceTransformerDocumentVectors.
-for query in \
-    'liberal arts college in southern california' \
-    'first manned mission to the moon' \
-    'marvel movie about an insect themed superhero'
-do
-    run Q7A "$query" "$script_dir/wiki_search.py" "$data_dir" -m sent -q "$query" "$@"
-done
+# # Q7A: SentenceTransformerDocumentVectors.
+# for query in \
+#     'liberal arts college in southern california' \
+#     'first manned mission to the moon' \
+#     'marvel movie about an insect themed superhero'
+# do
+#     run Q7A "$query" "$script_dir/wiki_search.py" "$data_dir" -m sent -q "$query" "$@"
+# done
 
-# Q8A: SentenceTransformerDocumentVectors.
-for query in \
-    'Nikola Tesla birthday' \
-    'Ingredients in Fig Newtons' \
-    'Forms of communication during World War 2' \
-    'The nature of God'
-do
-    run Q8A "$query" "$script_dir/wiki_search.py" "$data_dir" -m sent -q "$query" "$@"
-done
+# # Q8A: SentenceTransformerDocumentVectors.
+# for query in \
+#     'Nikola Tesla birthday' \
+#     'Ingredients in Fig Newtons' \
+#     'Forms of communication during World War 2' \
+#     'The nature of God'
+# do
+#     run Q8A "$query" "$script_dir/wiki_search.py" "$data_dir" -m sent -q "$query" "$@"
+# done
 
 # Q7B: Word2Vectors.
 for word in college science

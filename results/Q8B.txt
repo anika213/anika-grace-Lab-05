@@ -1,0 +1,96 @@
+
+[Q8B] male
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 most similar words to male:
+1. male (similarity=1.0)
+2. female (similarity=0.8276463150978088)
+3. males (similarity=0.6864309906959534)
+4. females (similarity=0.6383426785469055)
+5. sodomites (similarity=0.5991236567497253)
+6. genital (similarity=0.5897350311279297)
+7. genitalia (similarity=0.5872114896774292)
+8. heterosexual (similarity=0.5848420262336731)
+9. offspring (similarity=0.566984236240387)
+10. gender (similarity=0.5614932775497437)
+
+[Q8B] female
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 most similar words to female:
+1. female (similarity=0.9999999403953552)
+2. male (similarity=0.8315727114677429)
+3. woman (similarity=0.6181463599205017)
+4. women (similarity=0.5974253416061401)
+5. danielys (similarity=0.5743034482002258)
+6. sodomites (similarity=0.5405321717262268)
+7. transgender (similarity=0.5375284552574158)
+8. females (similarity=0.5345364809036255)
+9. males (similarity=0.5314220190048218)
+10. sex (similarity=0.5303089618682861)
+
+[Q8B] black
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 most similar words to black:
+1. black (similarity=1.0)
+2. white (similarity=0.8748658299446106)
+3. blue (similarity=0.7109127044677734)
+4. colored (similarity=0.6751008033752441)
+5. red (similarity=0.6520833373069763)
+6. panther (similarity=0.6331937313079834)
+7. maroon (similarity=0.631056547164917)
+8. collar (similarity=0.6300510168075562)
+9. pink (similarity=0.6288317441940308)
+10. yellow (similarity=0.6248520612716675)
+
+[Q8B] white
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 most similar words to white:
+1. white (similarity=1.0)
+2. black (similarity=0.8771753311157227)
+3. yellow (similarity=0.7168884873390198)
+4. red (similarity=0.7106162309646606)
+5. blue (similarity=0.7022928595542908)
+6. brown (similarity=0.698448121547699)
+7. collar (similarity=0.6444724798202515)
+8. colored (similarity=0.6331712007522583)
+9. pink (similarity=0.6202794313430786)
+10. buff (similarity=0.6084504127502441)
+
+[Q8B] africa
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 most similar words to africa:
+1. africa (similarity=1.0)
+2. asia (similarity=0.7550860643386841)
+3. korea (similarity=0.749392032623291)
+4. african (similarity=0.7198430895805359)
+5. america (similarity=0.6915128827095032)
+6. africans (similarity=0.6911523342132568)
+7. australia (similarity=0.6843798160552979)
+8. asian (similarity=0.6810176968574524)
+9. ossetia (similarity=0.673167884349823)
+10. asians (similarity=0.6636935472488403)
+
+[Q8B] europe
+
+Training vector model. Please wait, this may take a while...
+Done!
+Top 10 most similar words to europe:
+1. europe (similarity=0.9999998211860657)
+2. germany (similarity=0.7230541110038757)
+3. asia (similarity=0.717459499835968)
+4. european (similarity=0.6853237152099609)
+5. scandinavia (similarity=0.6719825267791748)
+6. italy (similarity=0.6700834035873413)
+7. balkans (similarity=0.6572141647338867)
+8. britain (similarity=0.6538487672805786)
+9. greece (similarity=0.6504697799682617)
+10. countries (similarity=0.6400295495986938)
